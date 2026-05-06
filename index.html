@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cloud-focused resume portfolio for an aspiring AWS practitioner."
+    />
+    <title>Karan Ahuja | Cloud Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Karan Ahuja home">
+        <span class="brand-mark">K</span>
+        <span>Karan Ahuja</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Cloud Engineer Portfolio</p>
+          <h1>Hi, I’m Karan. I build and support reliable AWS systems.</h1>
+          <p class="hero-text">
+            AWS-certified engineer with 2+ years of hands-on experience managing
+            and optimising cloud-backed production environments across EC2, RDS,
+            S3, IAM, and CloudWatch.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="resume.pdf">Download Resume</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Portfolio status">
+          <div>
+            <span class="status-dot"></span>
+            <span>Ready for AWS deployment</span>
+          </div>
+          <dl>
+            <div>
+              <dt>Focus</dt>
+              <dd>AWS, DevOps, Production Support</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Sydney, Australia</dd>
+            </div>
+            <div>
+              <dt>Goal</dt>
+              <dd>Cloud Engineer / AWS Engineer</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="about" class="section two-column">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Resume summary</h2>
+        </div>
+        <div class="content-stack">
+          <p>
+            AWS-certified engineer with a strong background in infrastructure
+            automation, scripting, cloud operations, and data pipelines. I focus
+            on building reliable systems, improving production stability, and
+            debugging issues across application, database, and infrastructure
+            layers.
+          </p>
+          <p>
+            My experience includes supporting 14 AWS-backed environments,
+            optimising SQL workflows at scale, automating operational tasks with
+            Bash and Cron, and using CloudWatch metrics and logs to identify
+            performance bottlenecks before they become production incidents.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <h3>AWS</h3>
+            <p>EC2, RDS, S3, IAM, VPC, CloudWatch, Lambda, API Gateway, DynamoDB, SQS, SNS</p>
+          </article>
+          <article>
+            <h3>DevOps</h3>
+            <p>CI/CD concepts, Docker, Git, Linux, Unix systems, CloudFormation</p>
+          </article>
+          <article>
+            <h3>Programming</h3>
+            <p>C++, Python, SQL, Bash/Shell scripting, Node.js</p>
+          </article>
+          <article>
+            <h3>Data & Monitoring</h3>
+            <p>CloudWatch logging, metrics, alerting, Informatica PowerCenter, PowerExchange</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Cloud project roadmap</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div>
+              <p class="tag">AWS Project</p>
+              <h3>Cloud Resume Portfolio</h3>
+              <p>
+                A personal resume website prepared for deployment with AWS S3,
+                CloudFront, Route 53, ACM, and CI/CD automation.
+              </p>
+            </div>
+            <ul>
+              <li>Static site hosting</li>
+              <li>HTTPS custom domain</li>
+              <li>Automated deployment pipeline</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <p class="tag">Capstone</p>
+            <h3>AusCon Cloud Workflow Platform</h3>
+            <p>
+              Designed a multi-service AWS architecture using EC2, RDS, S3,
+              IAM, Route 53, and SNS for project task approvals and photo
+              evidence workflows.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="tag">Production</p>
+            <h3>ATC Purge Workflow</h3>
+            <p>
+              Designed and executed a large-scale SQL workflow that removed
+              roughly 6 million inactive records and improved SLA-critical
+              processing performance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section two-column">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Work and education</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>Sep 2022 - Current</span>
+            <h3>Application Developer / Cloud Engineer, DXC Technology</h3>
+            <p>
+              Manage and support 14 AWS-backed test and production environments
+              across EC2, RDS, and S3. Troubleshoot infrastructure, application,
+              and database issues using CloudWatch, SQL diagnostics, and
+              system-level analysis.
+            </p>
+          </article>
+          <article>
+            <span>Mar 2022 - Aug 2022</span>
+            <h3>Full Stack Developer, AusCon Capstone Project</h3>
+            <p>
+              Built a cloud-hosted workflow platform with EC2, RDS, S3, IAM,
+              Route 53, and SNS, including CRUD APIs, approval states, and
+              documentation for deployment and testing.
+            </p>
+          </article>
+          <article>
+            <span>May 2020 - Jun 2022</span>
+            <h3>Data Analyst, PwC</h3>
+            <p>
+              Delivered client data insights, led a team of four analysts, and
+              built dashboards and reports using Power BI and Tableau.
+            </p>
+          </article>
+          <article>
+            <span>Education & Certifications</span>
+            <h3>Western Sydney University</h3>
+            <p>
+              Bachelor of Computer Science, majoring in Cloud Computing with a
+              minor in Cyber Security. AWS Certified Developer - Associate, AWS
+              Cloud Practitioner, and CompTIA Security+.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect</h2>
+          <p>
+            Reach me by email, phone, or LinkedIn. The resume download links to
+            the PDF included with this portfolio.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:karanahuja57226@gmail.com">karanahuja57226@gmail.com</a>
+          <a href="tel:+61430712662">0430 712 662</a>
+          <a href="https://www.linkedin.com/in/karan-ahuja-ka/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="resume.pdf">Download Resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built as a cloud resume project. Deploy target: AWS S3 + CloudFront.</p>
+    </footer>
+  </body>
+</html>
