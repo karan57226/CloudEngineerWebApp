@@ -161,8 +161,10 @@ h3 {
 }
 
 .button.primary {
+  border: 0;
   background: var(--accent);
   color: white;
+  cursor: pointer;
 }
 
 .button.secondary,
@@ -306,11 +308,65 @@ li + li {
   align-items: start;
   display: grid;
   gap: 2rem;
-  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.75fr);
+  grid-template-columns: minmax(0, 0.85fr) minmax(20rem, 1fr);
 }
 
 .contact-links {
   margin-top: 0;
+}
+
+.query-form {
+  background: rgba(255, 253, 248, 0.8);
+  border: 1px solid rgba(215, 208, 197, 0.9);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.field-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.query-form label {
+  color: var(--ink);
+  display: grid;
+  font-size: 0.88rem;
+  font-weight: 800;
+  gap: 0.45rem;
+}
+
+.query-form input,
+.query-form textarea {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 2.75rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.query-form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(18, 108, 106, 0.14);
+  outline: none;
+}
+
+.form-status {
+  font-weight: 700;
+  margin: 0;
+  min-height: 1.5rem;
 }
 
 .site-footer {
@@ -346,7 +402,8 @@ li + li {
   }
 
   .skills-grid,
-  .project-grid {
+  .project-grid,
+  .field-grid {
     grid-template-columns: 1fr;
   }
 }

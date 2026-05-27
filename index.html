@@ -35,7 +35,7 @@
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">Cloud Engineer Portfolio</p>
-          <h1>Hi, I’m Karan. I build and support reliable AWS systems.</h1>
+          <h1>Hi, I'm Karan. I build and support reliable AWS systems.</h1>
           <p class="hero-text">
             AWS-certified engineer with 2+ years of hands-on experience managing
             and optimising cloud-backed production environments across EC2, RDS,
@@ -62,7 +62,7 @@
             </div>
             <div>
               <dt>Goal</dt>
-              <dd>Cloud Engineer / AWS Engineer</dd>
+              <dd>Cloud Engineer / DevOps Engineer</dd>
             </div>
           </dl>
         </aside>
@@ -164,8 +164,8 @@
         </div>
         <div class="timeline">
           <article>
-            <span>Sep 2022 - Current</span>
-            <h3>Application Developer / Cloud Engineer, DXC Technology</h3>
+            <span>Sep 2022 - Sep 2025</span>
+            <h3>Junior Cloud Engineer / Application Developer, DXC Technology</h3>
             <p>
               Manage and support 14 AWS-backed test and production environments
               across EC2, RDS, and S3. Troubleshoot infrastructure, application,
@@ -175,7 +175,7 @@
           </article>
           <article>
             <span>Mar 2022 - Aug 2022</span>
-            <h3>Full Stack Developer, AusCon Capstone Project</h3>
+            <h3>Cloud Architect &amp; Fullstack Developer, AusCon Capstone Project</h3>
             <p>
               Built a cloud-hosted workflow platform with EC2, RDS, S3, IAM,
               Route 53, and SNS, including CRUD APIs, approval states, and
@@ -205,23 +205,46 @@
       <section id="contact" class="section contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let’s connect</h2>
+          <h2>Let's connect</h2>
           <p>
-            Reach me by email, phone, or LinkedIn. The resume download links to
-            the PDF included with this portfolio.
+            Leave a message through the form or reach me directly by email, phone,
+            or LinkedIn. The form is backed by a local Python CRUD API.
           </p>
+          <div class="contact-links">
+            <a href="mailto:karanahuja57226@gmail.com">karanahuja57226@gmail.com</a>
+            <a href="tel:+61430712662">0430 712 662</a>
+            <a href="https://www.linkedin.com/in/karan-ahuja-ka/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="resume.pdf">Download Resume</a>
+          </div>
         </div>
-        <div class="contact-links">
-          <a href="mailto:karanahuja57226@gmail.com">karanahuja57226@gmail.com</a>
-          <a href="tel:+61430712662">0430 712 662</a>
-          <a href="https://www.linkedin.com/in/karan-ahuja-ka/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="resume.pdf">Download Resume</a>
-        </div>
+        <form class="query-form" id="query-form">
+          <div class="field-grid">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+          </div>
+          <label>
+            Subject
+            <input name="subject" type="text" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>Built as a cloud resume project. Deploy target: AWS S3 + CloudFront.</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
